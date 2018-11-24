@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Barbershop Borodinski</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
+    <div class="page-header__logo  page-header__logo--inner">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+      </picture>
+    </div>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a>Наши работы</a></li>
+          <li class="main-nav__item"><a href="form.html">Записаться</a></li>
+          <li class="main-nav__item"><a href="">Контакты</a></li>
+          <li class="main-nav__item"><a href="">HTML Academy</a></li>
+        </ul>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__user-item">
+            <a class="main-nav__user-login" href="" title="Войти">Вход</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="inner-page">
+    <section class="portfolio">
+      <header class="portfolio__header">
+        <h2 class="portfolio__title  visually-hidden">Наши работы</h2>
+        <b class="portfolio__slogan">Наши работы</b>
+        <a class="btn  btn--home" href="index.html">На главную</a>
+      </header>
+      <article class="portfolio__item  portfolio__item--work-of-month">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">
+          <img class="portfolio__foto" src="img/photo-1-mobile.jpg" alt="Лжепётр Мчиславский">
+        </picture>
+        <div class="portfolio__month-tag">Работа месяца</div>
+        <div class="portfolio__desc">
+          <b class="portfolio__item_name">Лжепётр Мчиславский</b>
+          <p class="portfolio__feedback">Где я&nbsp;только ни&nbsp;стригся, но&nbsp;так как делаете это вы&nbsp;&mdash; не&nbsp;умеет никто другой! Еще раз спасибо и&nbsp;до скорого!</p>
+          <ul class="portfolio__service-list">
+            <li class="portfolio__service-item  portfolio__service-item--cut">Стрижка</li>
+            <li class="portfolio__service-item  portfolio__service-item--beard">Бритье</li>
+            <li class="portfolio__service-item  portfolio__service-item--mustache">Усы</li>
+          </ul>
+        </div>
+      </article>
+      <article class="portfolio__item">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">
+          <img class="portfolio__foto" src="img/photo-2-mobile.jpg" alt="Саша Мальцев">
+        </picture>
+        <div class="portfolio__desc">
+          <b class="portfolio__item_name">Саша Мальцев</b>
+          <p class="portfolio__feedback">Попросил омолодить и&nbsp;омолодили! Кто теперь скажет, что мне 45?</p>
+          <ul class="portfolio__service-list">
+            <li class="portfolio__service-item  portfolio__service-item--cut">Стрижка</li>
+          </ul>
+        </div>
+      </article>
+      <article class="portfolio__item">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg">
+          <img class="portfolio__foto" src="img/photo-3-mobile.jpg" alt="Владимир Иваныч">
+        </picture>
+        <div class="portfolio__desc">
+          <b class="portfolio__item_name">Владимир Иваныч</b>
+          <p class="portfolio__feedback">К зимнему сезону — готов!</p>
+          <ul class="portfolio__service-list">
+            <li class="portfolio__service-item  portfolio__service-item--beard">Борода</li>
+            <li class="portfolio__service-item  portfolio__service-item--mustache">Усы</li>
+          </ul>
+        </div>
+      </article>
+      <article class="portfolio__item">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg">
+          <img class="portfolio__foto" src="img/photo-4-mobile.jpg" alt="Винстон Синий">
+        </picture>
+        <div class="portfolio__desc">
+          <b class="portfolio__item_name">Винстон Синий</b>
+          <p class="portfolio__feedback">Как только заростаю и&nbsp;волосы начинают мешать видеть&nbsp;&mdash; бегом в&nbsp;Бородинский!</p>
+          <ul class="portfolio__service-list">
+            <li class="portfolio__service-item  portfolio__service-item--cut">Стрижка</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <section class="price">
+      <div class="price__wrapper">
+        <b class="price__title">Прейскурант</b>
+        <div class="price__columns">
+          <table class="price__table">
+            <tr>
+              <td class="price__col-1">1</td>
+              <td class="price__col-2">Классическая стрижка</td>
+              <td class="price__col-3"><span class="price__bkt">(</span>с мытьём головы<span class="price__bkt">)</span></td>
+              <td class="price__col-4">1 500 руб.</td>
+            </tr>
+            <tr>
+              <td class="price__col-1">2</td>
+              <td class="price__col-2">Современный вариант</td>
+              <td class="price__col-3"><span class="price__bkt">(</span>с мытьём головы<span class="price__bkt">)</span></td>
+              <td class="price__col-4">1 500 руб.</td>
+            </tr>
+            <tr>
+              <td class="price__col-1">3</td>
+              <td class="price__col-2">Индивидуальный подход</td>
+              <td class="price__col-3"><span class="price__bkt">(</span>с мытьём головы<span class="price__bkt">)</span></td>
+              <td class="price__col-4">2 000 руб.</td>
+            </tr>
+            <tr>
+              <td class="price__col-1">4</td>
+              <td class="price__col-2">Бритьё головы</td>
+              <td class="price__col-3"><span class="price__bkt">(</span>без мытья<span class="price__bkt">)</span></td>
+              <td class="price__col-4">500 руб.</td>
+            </tr>
+            <tr>
+              <td class="price__col-1">5</td>
+              <td class="price__col-2">Бритьё головы</td>
+              <td class="price__col-3"><span class="price__bkt">(</span>с мытьём головы<span class="price__bkt">)</span></td>
+              <td class="price__col-4">1 000 руб.</td>
+            </tr>
+          </table>
+          <div class="price__discount">
+            <p class="price__discount-desc">C&nbsp;10:00 до&nbsp;14:00 скидка 20%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer  page-footer--inner-photo">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__contacts">
+        <b>Барбершоп «Бородинский»</b><br>
+        г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+        <a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span> +7 (812) 555-66-66</a>
+      </p>
+      <p class="page-footer__social">
+        <span class="social-links">
+          <a class="social-link  social-link--vk" href="#">Мы в Вконтакте</a>
+          <a class="social-link  social-link--fb" href="#">Мы в Фейсбуке</a>
+          <a class="social-link  social-link--in" href="#">Мы в Инстаграме</a>
+        </span>
+      </p>
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="btn  page-footer__copyright-link" href="#">HTML Academy</a>
+      </p>
+    </div>
+  </footer>
+  <div class="modal-content">
+    <h2 class="modal-content__title">Личный кабинет</h2>
+    <p>Введите свой логин и пароль, чтобы войти</p>
+    <form class="modal-content__login-form" action="https://echo.htmlacademy.ru" method="post">
+      <input class="modal-content__field  modal-content__field--icon-user" type="text" name="login" placeholder="Логин">
+      <input class="modal-content__field  modal-content__field--icon-password" type="password" name="password" placeholder="Пароль">
+      <label class="modal-content__checkbox-label">
+        <input class="modal-content__chekbox" type="checkbox" name="remember">
+        <span class="modal-content__checkbox-indicator"></span>
+        Запомните меня
+      </label>
+      <a class="modal-content__restore" href="#">Я забыл пароль!</a>
+      <button class="modal-content__btn--login" type="submit">Войти<span class="modal-content__extra-text"> в личный кабинет</span></button>
+      <button class="modal-content__btn--close" type="button" title="Закрыть">Закрыть</button>
+    </form>
+  </div>
+  <div class="modal-overlay"></div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
