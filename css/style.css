@@ -103,6 +103,9 @@ table {
   color: #000000;
   background-color: #f8f5f2;
 }
+.advantages {
+  position: relative;
+}
 .advantages__wrapper {
   width: auto;
   padding-top: 30px;
@@ -154,6 +157,22 @@ table {
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+}
+.advantages__btn-left,
+.advantages__btn-right {
+  position: absolute;
+	content: "";
+	display: block;
+	background-color: transparent;
+	top: 0;
+	width: 50%;
+	height: 350px;
+}
+.advantages__btn-left {
+  left: 0;
+}
+.advantages__btn-right {
+  right: 0;
 }
 .main-nav {
   position: relative;
@@ -1019,6 +1038,9 @@ table {
   text-transform: uppercase;
   text-align: center;
 }
+.reviews__list {
+  position: relative;
+}
 .reviews__item {
   position: relative;
   margin: 0 20px 23px;
@@ -1059,6 +1081,25 @@ table {
 }
 #reviews-input-3:checked ~ .reviews__list .slider__item:nth-child(3) {
   display: block;
+}
+.reviews__prev,
+.reviews__next {
+  position: absolute;
+  content: "";
+  width: 50%;
+  top: 0;
+  background-color: transparent;
+  color: transparent;
+  height: 100px;
+  cursor: default;
+  border: none;
+  outline: 0;
+  }
+.reviews__prev {
+  left: 0;
+}
+.reviews__next {
+  right: 0;
 }
 .social-links {
   display: flex;
@@ -1599,6 +1640,7 @@ table {
   .advantages__toggles {
     display: none;
   }
+
   .main-nav {
     width: auto;
     min-height: 70px;
@@ -2112,6 +2154,9 @@ table {
   }
   .reviews__prev,
   .reviews__next {
+    position: relative;
+    width: auto;
+    height: auto;
     min-width: 48px;
     padding: 0;
     font-size: 0;
@@ -2976,11 +3021,11 @@ table {
   .btn--home {
     display: none;
   }
-  .reviews__write,
-  .reviews__prev,
-  .reviews__next {
+  .reviews__write {
     display: none;
   }
+  
+  
   .reviews__toggles {
     left: 0;
     right: 0;
