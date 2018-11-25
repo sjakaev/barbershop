@@ -496,27 +496,27 @@ table {
   line-height: 24px;
   cursor: pointer;
 }
-.order-form__label::before {
+.order-form__label::before {      /* квадратики доп услуги */
   content: "";
   position: absolute;
   box-sizing: border-box;
   border: 1px solid #e5ddd5;
   background: #ffffff;
-  transition: all 0.1s ease-out;
+  transition: all 0.08s ease-out;
 }
 .order-form__label--model {
   margin-bottom: 13px;
   text-align: center;
 }
-.order-form__label--model::before {
+.order-form__label--model::before {      /* кружочки бороды */
   top: 0;
   left: 50%;
   margin-left: -25px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  transition: all 0.5s ease-out;
   background: #ffffff;
+
 }
 
 #admiral:hover ~ .order-form__label--model[for="admiral"]::before,
@@ -531,7 +531,9 @@ table {
 #polar-explorer:checked ~ .order-form__label--model[for="polar-explorer"]::before,
 #lord:checked ~ .order-form__label--model[for="lord"]::before,
 #wiseman:checked ~ .order-form__label--model[for="wiseman"]::before {
-  border: 20px solid #e5ddd5;
+
+   border: 1px solid #e5ddd5;
+
 }
 #admiral:checked ~ .order-form__label--model[for="admiral"]::after,
 #lumberjack:checked ~ .order-form__label--model[for="lumberjack"]::after,
@@ -549,37 +551,38 @@ table {
   border-radius: 50%;
   border: 1px solid #e5ddd5;
   z-index: 2;
-  background-color: #826550;
+   /* background-color: #826550; */ 
+  
 }
-#admiral.checked:hover ~ .order-form__label--model[for="admiral"]::before,
-#lumberjack.checked:hover ~ .order-form__label--model[for="lumberjack"]::before,
-#polar-explorer.checked:hover ~ .order-form__label--model[for="polar-explorer"]::before,
-#lord.checked:hover ~ .order-form__label--model[for="lord"]::before,
-#wiseman.checked:hover ~ .order-form__label--model[for="wiseman"]::before {
+#admiral:checked:hover ~ .order-form__label--model[for="admiral"]::before,
+#lumberjack:checked:hover ~ .order-form__label--model[for="lumberjack"]::before,
+#polar-explorer:checked:hover ~ .order-form__label--model[for="polar-explorer"]::before,
+#lord:checked:hover ~ .order-form__label--model[for="lord"]::before,
+#wiseman:checked:hover ~ .order-form__label--model[for="wiseman"]::before {
+  border: 1px solid #d5c9bd;
+}
+#admiral:checked:hover ~ .order-form__label--model[for="admiral"]::after,
+#lumberjack:checked:hover ~ .order-form__label--model[for="lumberjack"]::after,
+#polar-explorer:checked:hover ~ .order-form__label--model[for="polar-explorer"]::after,
+#lord:checked:hover ~ .order-form__label--model[for="lord"]::after,
+#wiseman:checked:hover ~ .order-form__label--model[for="wiseman"]::after {
   border-color: #d5c9bd;
-
 }
-#admiral.checked:hover ~ .order-form__label--model[for="admiral"]::after,
-#lumberjack.checked:hover ~ .order-form__label--model[for="lumberjack"]::after,
-#polar-explorer.checked:hover ~ .order-form__label--model[for="polar-explorer"]::after,
-#lord.checked:hover ~ .order-form__label--model[for="lord"]::after,
-#wiseman.checked:hover ~ .order-form__label--model[for="wiseman"]::after {
-  border-color: #d5c9bd;
-}
-#admiral.checked:active ~ .order-form__label--model[for="admiral"]::before,
-#lumberjack.checked:active ~ .order-form__label--model[for="lumberjack"]::before,
-#polar-explorer.checked:active ~ .order-form__label--model[for="polar-explorer"]::before,
-#lord.checked:active ~ .order-form__label--model[for="lord"]::before,
-#wiseman.checked:active ~ .order-form__label--model[for="wiseman"]::before {
+#admiral:checked:active ~ .order-form__label--model[for="admiral"]::before,
+#lumberjack:checked:active ~ .order-form__label--model[for="lumberjack"]::before,
+#polar-explorer:checked:active ~ .order-form__label--model[for="polar-explorer"]::before,
+#lord:checked:active ~ .order-form__label--model[for="lord"]::before,
+#wiseman:checked:active ~ .order-form__label--model[for="wiseman"]::before {
   background-color: #d5c9bd;
+  transition: all 0.08s ease-out;
 }
-#admiral.checked:active ~ .order-form__label--model[for="admiral"]::after,
-#lumberjack.checked:active ~ .order-form__label--model[for="lumberjack"]::after,
-#polar-explorer.checked:active ~ .order-form__label--model[for="polar-explorer"]::after,
-#lord.checked:active ~ .order-form__label--model[for="lord"]::after,
-#wiseman.checked:active ~ .order-form__label--model[for="wiseman"]::after {
+#admiral:checked:active ~ .order-form__label--model[for="admiral"]::after,
+#lumberjack:checked:active ~ .order-form__label--model[for="lumberjack"]::after,
+#polar-explorer:checked:active ~ .order-form__label--model[for="polar-explorer"]::after,
+#lord:checked:active ~ .order-form__label--model[for="lord"]::after,
+#wiseman:checked:active ~ .order-form__label--model[for="wiseman"]::after {
   background-color: #d5c9bd;
-  transition: all 0.5s ease-out;
+  transition: all 0.08s ease-out;
 }
 .order-form__title--additional-service {
   margin-bottom: 36px;
@@ -600,7 +603,6 @@ table {
   left: 0;
   width: 36px;
   height: 36px;
-  transition: all 0.5s ease-out;
 }
 #color-beard:hover ~ .order-form__label--additional[for="color-beard"]::before,
 #twirl-mustache:hover ~ .order-form__label--additional[for="twirl-mustache"]::before,
@@ -608,7 +610,8 @@ table {
 #align-temple:hover ~ .order-form__label--additional[for="align-temple"]::before,
 #remove-graying:hover ~ .order-form__label--additional[for="remove-graying"]::before,
 #polish-bald-spot:hover ~ .order-form__label--additional[for="polish-bald-spot"]::before {
-  border-color: #d5c9bd;
+  border-color: #d5c9bd;  /* рамка квадратиков при наведении */
+  
 }
 #color-beard:active ~ .order-form__label--additional[for="color-beard"]::before,
 #twirl-mustache:active ~ .order-form__label--additional[for="twirl-mustache"]::before,
@@ -616,7 +619,7 @@ table {
 #align-temple:active ~ .order-form__label--additional[for="align-temple"]::before,
 #remove-graying:active ~ .order-form__label--additional[for="remove-graying"]::before,
 #polish-bald-spot:active ~ .order-form__label--additional[for="polish-bald-spot"]::before {
-  background-color: #d5c9bd;
+  background-color: #d5c9bd; /* рамка квадратиков при наведении */
 }
 #color-beard:active ~ .order-form__label--additional[for="color-beard"]::after,
 #twirl-mustache:active ~ .order-form__label--additional[for="twirl-mustache"]::after,
