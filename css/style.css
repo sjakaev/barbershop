@@ -477,6 +477,7 @@ table {
 .order-form__list--model li {
   margin-bottom: 29px;
   width: 20%;
+  min-width: 100px;
   padding-top: 65px;
 }
 .order-form__list--model li img {
@@ -1832,7 +1833,7 @@ table {
     margin-bottom: 13px;
   }
   .order-form__list {
-    justify-content: space-between;
+    justify-content: center;
   }
   .order-form__list--model li {
     margin-bottom: 0;
