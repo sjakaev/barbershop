@@ -2143,7 +2143,7 @@ table {
   }
   .reviews__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
     height: auto;
     padding: 0;
